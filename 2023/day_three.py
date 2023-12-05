@@ -57,6 +57,7 @@ def solve_second_problem():
             for j in range(len(matrix[i])):
                 if matrix[i][j].isdigit():
                     digits.append(matrix[i][j])
+                    # cardinal points
                     for a in range(-1, 2):
                         for b in range(-1, 2):
                             if 0 <= i + a < len(matrix) and 0 <= j + b < len(matrix[i]) and matrix[i + a][j + b] == '*':
